@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Аналитический обзор эффективных инструментов internet-маркетинга от проекта Бизнес Обозрение. Снижение стоимости целевого действия, комплексная оптимизация рекламного бюджета и защита от бот-трафика. Пошаговые алгоритмы привлечения живой активности со смартфонов Android.">
+    
+    <!-- ВОТ ЭТА СТРОЧКА ДОБАВЛЯЕТ КРАСИВЫЙ ФАВИКОН В БРАУЗЕР -->
+    <link rel="icon" type="image/png" href="https://icons8.com">
+    
+    <title>Бизнес Обозрение | Топ-7 платформ для заработка и раскрутки</title>
+    <style>
+        :root {
+            --bux-primary: #2563eb;
+            --bux-secondary: #10b981;
+            --bux-dark: #1f2937;
+            --bux-bg: #f3f4f6;
+            --bux-card: #ffffff;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bux-bg);
+        }
+        .bux-wrapper {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            color: var(--bux-dark);
+            background-color: var(--bux-bg);
+            padding: 15px;
+            max-width: 1000px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .bux-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            color: white;
+            text-align: center;
+            padding: 45px 20px 35px 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        .bux-datetime {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 0.85rem;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 5px 12px;
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            text-transform: lowercase;
+        }
+        .bux-datetime::first-letter {
+            text-transform: uppercase;
+        }
+        @media (max-width: 480px) {
+            .bux-datetime {
+                position: static;
+                display: inline-block;
+                margin-bottom: 15px;
+            }
+        }
+        .bux-banner-container {
+            max-width: 728px;
+            margin: 0 auto 20px auto;
+        }
+        .bux-banner-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .bux-hero h1 {
+            font-size: 2rem;
+            margin: 10px 0;
+            color: #ffffff !important;
+            font-weight: 700;
+        }
+        .bux-hero p {
+            font-size: 1.05rem;
+            opacity: 0.9;
+            margin: 0 auto;
+            max-width: 650px;
+            color: #ffffff;
+        }
+        .bux-gift-banner {
+            background: linear-gradient(90deg, #ef4444 0%, #f97316 100%);
+            color: #ffffff;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25);
+            border: 2px dashed #ffffff;
+        }
+        .bux-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 35px;
+        }
+        @media (min-width: 768px) {
+            .bux-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .bux-card {
+            background: var(--bux-card);
+            border-radius: 10px;
+            padding: 22px;
+            border: 1px solid #e5e7eb;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .bux-card h3 {
+            margin: 0 0 12px 0;
+            font-size: 1.45rem !important;
+            color: #1e3a8a;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .bux-badge {
+            background-color: #dbeafe;
+            color: #1e40af;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-weight: bold;
+        }
+        .bux-card p {
+            font-size: 1rem;
+            color: #4b5563;
+            margin: 0 0 15px 0;
+            line-height: 1.5;
+        }
+        .bux-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+            font-size: 0.95rem;
+        }
+        .bux-list li {
+            margin-bottom: 6px;
+            padding-left: 22px;
+            position: relative;
+        }
+        .bux-list li::before {
+            content: "\2713";
+            color: var(--bux-secondary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        .bux-btn {
+            display: block;
+            text-align: center;
+            background-color: var(--bux-secondary);
+            color: white !important;
+            text-decoration: none;
+            padding: 11px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .bux-btn:hover {
+            background-color: #059669;
+        }
+        .bux-footer {
+            text-align: center;
+            padding: 25px 10px 10px 10px;
+            color: #6b7280;
+            font-size: 0.85rem;
+            border-top: 1px solid #e5e7eb;
+            margin-top: 30px;
+        }
+        .bux-footer-link {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .bux-footer-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="bux-wrapper">
+    <div class="bux-hero">
+        <div class="bux-datetime" id="buxLiveDateTime">Загрузка времени...</div>
+        <div class="bux-banner-container">
+            <img src="ССЫЛКА_НА_ВАШ_БАННЕР" alt="Рекламный Баннер" onerror="this.style.display='none'">
+        </div>
+        <h1>Лучшие платформы для заработка и раскрутки ваших проектов</h1>
+        <p>Надежные буксы и биржи микрозадач. Зарабатывайте без вложений или привлекайте активных посетителей на свои ресурсы прямо сейчас!</p>
+    </div>
+
+    <div class="bux-gift-banner">
+        🎁 Зарегистрируйтесь на любой платформе ниже прямо сейчас, и вас ждет гарантированный подарок внутри!
+    </div>
+
+    <div class="bux-grid">
+        <!-- 1. SOCPUBLIC -->
+        <div class="bux-card">
+            <div>
+                <h3>SocPublic <span class="bux-badge">Лидер</span></h3>
+                <p>Популярный букс с огромным количеством заданий и мощным функционалом для продвижения ресурсов.</p>
+                <ul class="bux-list">
+                    <li>Заработок на кликах, лайках и регистрациях</li>
+                    <li>Автоматические выплаты от 1 рубля</li>
+                    <li>Дешевый и эффективный трафик</li>
+                </ul>
+            </div>
+            <a href="ВАША_РЕФЕРАЛЬНАЯ_ССЫЛКА_SOCPUBLIC" target="_blank" class="bux-btn">Начать работу</a>
+        </div>
+
+        <!-- 2. SEO-FAST -->
+        <div class="bux-card">
+            <div>
+                <h3>Seo-Fast <span class="bux-badge">Проверенный</span></h3>
+                <p>Надежная площадка, стабильно работающая много лет. Идеальна для серфинга и быстрого нагона трафика.</p>
+                <ul class="bux-list">
+                    <li>Большой объем серфинга каждый день</li>
+                    <li>Множество платежных систем для вывода</li>
+                    <li>Быстрый запуск рекламных кампаний</li>
+                </ul>
+            </div>
+            <a href="ВАША_РЕФЕРАЛЬНАЯ_ССЫЛКА_SEOFAST" target="_blank" class="bux-btn">Начать работу</a>
+        </div>
+
+        <!-- 3. SURFEARNER -->
+        <div class="bux-card">
+            <div>
+                <h3>SurfEarner <span class="bux-badge">Полупассив</span></h3>
+                <p>Уникальная платформа расширений. Позволяет зарабатывать на просмотре баннеров в браузере или продвигать свои проекты.</p>
+                <ul class="bux-list">
+                    <li>Доход за просмотр рекламы без отрыва от дел</li>
+                    <li>Идеальный инструмент для рекламы реф-ссылок</li>
+                    <li>Многоуровневая партнерская программа</li>
+                </ul>
+            </div>
+            <a href="ВАША_РЕФЕРАЛЬНАЯ_ССЫЛКА_SURFEARNER" target="_blank" class="bux-btn">Начать работу</a>
+        </div>
+
+        <!-- 4. AVISO -->
+        <div class="bux-card">
+            <div>
+                <h3>Aviso <span class="bux-badge">Топ трафик</span></h3>
+                <p>Активно развивающийся букс, который отлично подходит для комплексного продвижения сайтов и каналов.</p>
+                <ul class="bux-list">
+                    <li>Множество заданий в YouTube и ВК</li>
+                    <li>Регулярные денежные конкурсы</li>
+                    <li>Выгодные условия для рекламодателей</li>
+                </ul>
+            </div>
+            <a href="ВАША_РЕФЕРАЛЬНАЯ_ССЫЛКА_AVISO" target="_blank" class="bux-btn">Начать работу</a>
+        </div>
+
+        <!-- 5. PROFITCENTR -->
+        <div class="bux-card">
+            <div>
+                <h3>ProfitCentr <span class="bux-badge">Надежный</span></h3>
+                <p>Старейший проверенный букс с мгновенными выплатами и огромным ежедневным обновлением базы заданий.</p>
+                <ul class="bux-list">
+                    <li>Простые тесты, серфинг и чтение писем</li>
+                    <li>Быстрая проверка выполнения рекламодателями</li>
+                    <li>Качественная накрутка поведенческих факторов</li>
+                </ul>
+            </div>
+            <a href="ВАША_РЕФЕРАЛЬНАЯ_ССЫЛКА_PROFITCENTR" target="_blank" class="bux-btn">Начать работу</a>
+        </div>
+
+        <!-- 6. WMRFAST -->
+        <div class="bux-card">
+            <div>
+                <h3>WMRFast <span class="bux-badge">Быстрый старт</span></h3>
+                <p>Простой букс, позволяющий мгновенно запустить контекстную рекламу или получить первый доход.</p>
+                <ul class="bux-list">
+                    <li>Ежечасные бонусы для участников</li>
+                    <li>Функция эффективного автосерфинга</li>
+                    <li>Выгодная реферальная программа</li>
+                </ul>
+            </div>
+            <a href="ВАША_РЕФЕРАЛЬНАЯ_ССЫЛКА_WMRFAST" target="_blank" class="bux-btn">Начать работу</a>
+        </div>
+
+        <!-- 7. IPWEB -->
+        <div class="bux-card">
+            <div>
+                <h3>IPWeb <span class="bux-badge">Соцсети и ПО</span></h3>
+                <p>Сервис, специализирующийся на качественном продвижении в соцсетях и через собственную программу для заработка.</p>
+                <ul class="bux-list">
+                    <li>Повышенная оплата за действия в профилях</li>
+                    <li>Удобный софт для автоматизации серфинга</li>
+                    <li>Живые переходы и раскрутка без списаний</li>
+                </ul>
+            </div>
+            <a href="ВАША_РЕФЕРАЛЬНАЯ_ССЫЛКА_IPWEB" target="_blank" class="bux-btn">Начать работу</a>
+        </div>
+
+    </div>
+
+    <footer class="bux-footer">
+        <p>© <a href="https://t.me" target="_blank" class="bux-footer-link">Бизнес Обозрение</a>. Все права защищены.</p>
+    </footer>
+</div>
+
+<script>
+    function updateClockText() {
+        const now = new Date();
+        const optionsDate = { weekday: 'long', day: 'numeric', month: 'long' };
+        const dateString = now.toLocaleDateString('ru-RU', optionsDate);
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        document.getElementById('buxLiveDateTime').textContent = dateString + ', ' + hours + ':' + minutes;
+    }
+    updateClockText();
+    setInterval(updateClockText, 60000);
+</script>
+</body>
+</html>
